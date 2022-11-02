@@ -6,32 +6,37 @@ class Links extends Component {
     links: [
       {
         Text: "Twitter Link",
-        Link: "https://boygemini.github.io/Weatherlog/",
+        Link: "https://training.zuri.team/",
+        id: "btn__zuri",
         Key: 1,
       },
       {
         Text: "Zuri Team",
-        Link: "https://boygemini.github.io/Weatherlog/1",
+        Link: "http://books.zuri.team ",
+        id: "books",
         Key: 2,
       },
       {
         Text: "Zuri Books",
-        Link: "https://boygemini.github.io/Weatherlog/2",
+        Link: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
+        id: "book__python",
         Key: 3,
       },
       {
         Text: "Python Books",
-        Link: "https://boygemini.github.io/Weatherlog/3",
+        Link: "https://background.zuri.team",
+        id: "pitch",
         Key: 4,
       },
       {
         Text: "Background Check For Coders",
-        Link: "https://boygemini.github.io/Weatherlog/4",
+        Link: "https://books.zuri.team/hhd ",
         Key: 5,
       },
       {
         Text: "Design Books",
-        Link: "https://boygemini.github.io/Weatherlog/5",
+        Link: "hhttps://books.zuri.team/design-rules",
+        id: "book__design",
         Key: 6,
       },
     ],
@@ -40,7 +45,7 @@ class Links extends Component {
     return (
       <div className="MainBox">
         {this.state.links.map((link) => (
-          <button
+          <a
             className="linkButton"
             onClick={() => {
               window.location = link.Link;
@@ -48,7 +53,7 @@ class Links extends Component {
             key={link.Link}
           >
             {link.Text}
-          </button>
+          </a>
         ))}
         <div className="social-section">
           <svg
@@ -91,9 +96,9 @@ class Links extends Component {
           </svg>
         </div>
         <div className="footer">
-          <img src={images.zuri_internship} className="COMPS" alt="img"/>
+          <img src={images.zuri_internship} className="COMPS" alt="img" />
           <p className="hng9F">HNG Internship 9 Frontend Task</p>
-          <img src={images.ingressive} className="COMPS" alt="img"/>
+          <img src={images.ingressive} className="COMPS" alt="img" />
         </div>
       </div>
     );

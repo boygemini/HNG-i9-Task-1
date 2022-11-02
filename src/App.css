@@ -56,11 +56,24 @@
   font-size: 18px;
   font-weight: 500;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+}
+
+.linkButton:hover{
+  background-color: #d1d2d4;
+  cursor: pointer;
 }
 
 .MainBox{

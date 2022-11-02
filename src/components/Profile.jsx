@@ -47,8 +47,9 @@ class Profile extends Component {
               this.changeAvi(images.logo);
               console.log("Hey");
             }}
+            id ="profile__img"
           ></img>
-          <p>Jubril Bolajoko</p>
+          <p id="twitter">Jubril Bolajoko</p>
         </div>
         <img src={this.state.back} alt="" className="back" />
       </div>
