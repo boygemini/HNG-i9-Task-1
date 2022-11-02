@@ -18,7 +18,7 @@ class Profile extends Component {
   }
 
   changeSign() {
-    if (window.screen.width <= 800) {
+    if (window.screen.width <= 475) {
       this.setState({ back: images.back2 });
     }
     window.addEventListener("change", (e) => {
@@ -50,6 +50,7 @@ class Profile extends Component {
             id ="profile__img"
           ></img>
           <p id="twitter">Jubril Bolajoko</p>
+          <p id="slack">Jubril Gbadebo</p>
         </div>
         <img src={this.state.back} alt="" className="back" />
       </div>

@@ -5,39 +5,34 @@ class Links extends Component {
   state = {
     links: [
       {
-        Text: "Twitter Link",
+        Text: "Zuri Team",
         Link: "https://training.zuri.team/",
         id: "btn__zuri",
-        Key: 1,
+        Key: "1",
       },
       {
-        Text: "Zuri Team",
-        Link: "http://books.zuri.team ",
+        Text: "Coding & Design Books",
+        Link: "http://books.zuri.team",
         id: "books",
-        Key: 2,
+        Key: "2",
       },
       {
-        Text: "Zuri Books",
-        Link: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
+        Text: "Python Book For Beginners",
+        Link: "https://books.zuri.team/python-for-beginners?ref_id=<jubril--gbadebo>",
         id: "book__python",
-        Key: 3,
-      },
-      {
-        Text: "Python Books",
-        Link: "https://background.zuri.team",
-        id: "pitch",
-        Key: 4,
+        Key: "3",
       },
       {
         Text: "Background Check For Coders",
-        Link: "https://books.zuri.team/hhd ",
-        Key: 5,
+        Link: "https://background.zuri.team",
+        id: "pitch",
+        Key: "5",
       },
       {
-        Text: "Design Books",
-        Link: "hhttps://books.zuri.team/design-rules",
+        Text: "Get A Design Book For Free",
+        Link: "https://books.zuri.team/design-rules",
         id: "book__design",
-        Key: 6,
+        Key: "6",
       },
     ],
   };
@@ -45,15 +40,16 @@ class Links extends Component {
     return (
       <div className="MainBox">
         {this.state.links.map((link) => (
-          <a
-            className="linkButton"
-            onClick={() => {
-              window.location = link.Link;
-            }}
-            key={link.Link}
-          >
-            {link.Text}
-          </a>
+          <div className="LinkContainer">
+            <a
+              className="linkButton"
+                                   href={link.Link}
+                                   id={link.id}
+              key={link.Key}
+            >
+              {link.Text}
+            </a>
+          </div>
         ))}
         <div className="social-section">
           <svg
